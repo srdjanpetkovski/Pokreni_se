@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Montserrat:wght@300;400;900&display=swap");
+/***************
+variables
+***************/
+/***************
+basic styles
+***************/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***************
+mixins
+***************/
+/*# sourceMappingURL=style.css.map */

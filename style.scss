@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Montserrat:wght@300;400;900&display=swap');
+
+/***************
+variables
+***************/
+$primary: 'Montserrat', sans-serif;
+$secondary: 'Faster One', cursive;
+$white: #fff;
+$green: #8DF48B;
+$black: #272B34;
+$red: #D85080;
+$fontSize: 16px;
+$transition: .4s ease;
+
+/***************
+basic styles
+***************/
+body {
+    font-family: $primary;
+    font-size: $fontSize;
+    line-height: 1.5;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+/***************
+mixins
+***************/
