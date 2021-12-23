@@ -11,6 +11,7 @@ $black: #272B34;
 $red: #D85080;
 $fontSize: 16px;
 $transition: .4s ease;
+$padding: 50px 0;
 
 /***************
 basic styles
@@ -30,3 +31,105 @@ a {
 /***************
 mixins
 ***************/
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin btn {
+    font-size: 1.25rem;
+    background: $red;
+    color: $white;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+@mixin h2($color) {
+    color: $color;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: $primary;
+}
+@mixin line($bgColor) {
+    background: $bgColor;
+    content: "";
+    height: 5px;
+    display: block;
+    border: none;
+    width: 20%;
+    margin: 30px auto;
+}
+
+/***************
+main header
+***************/
+.mainHeader {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 81vh;
+    article {
+        padding-top: 50px;
+        .navbar {
+            background: $black;
+            border-bottom: 5px solid $green;
+            padding: 0;
+            .navbar-brand {
+                background: $green;
+                font-size: 2rem;
+                font-family: $secondary;
+                font-weight: 900;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: $black;
+                padding: 10px;
+            }
+            .navbar-nav {
+                padding-right: 15px;
+                .nav-link {
+                    color: $green;
+                    text-transform: uppercase;
+                    transition: $transition;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    hgroup {
+        margin-top: 240px;
+        h1 {
+            font-size: 6rem;
+            color: $green;
+            text-shadow: 5px 5px 20px $black;
+            font-weight: 900;
+        }
+        p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+    }
+}
+
+/***************
+o nama
+***************/
+.o-nama {
+    background: $black;
+    padding: $padding;
+    h2 {
+        @include h2($white);
+        &::after {
+            @include line($green);
+        }
+    }
+    p {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+}

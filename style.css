@@ -22,4 +22,96 @@ a {
 /***************
 mixins
 ***************/
+/***************
+main header
+***************/
+.mainHeader {
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 81vh;
+}
+
+.mainHeader article {
+  padding-top: 50px;
+}
+
+.mainHeader article .navbar {
+  background: #272B34;
+  border-bottom: 5px solid #8DF48B;
+  padding: 0;
+}
+
+.mainHeader article .navbar .navbar-brand {
+  background: #8DF48B;
+  font-size: 2rem;
+  font-family: "Faster One", cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #272B34;
+  padding: 10px;
+}
+
+.mainHeader article .navbar .navbar-nav {
+  padding-right: 15px;
+}
+
+.mainHeader article .navbar .navbar-nav .nav-link {
+  color: #8DF48B;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.mainHeader article .navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.mainHeader hgroup {
+  margin-top: 240px;
+}
+
+.mainHeader hgroup h1 {
+  font-size: 6rem;
+  color: #8DF48B;
+  text-shadow: 5px 5px 20px #272B34;
+  font-weight: 900;
+}
+
+.mainHeader hgroup p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/***************
+o nama
+***************/
+.o-nama {
+  background: #272B34;
+  padding: 50px 0;
+}
+
+.o-nama h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.o-nama h2::after {
+  background: #8DF48B;
+  content: "";
+  height: 5px;
+  display: block;
+  border: none;
+  width: 20%;
+  margin: 30px auto;
+}
+
+.o-nama p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
 /*# sourceMappingURL=style.css.map */
