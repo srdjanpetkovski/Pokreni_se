@@ -51,6 +51,13 @@ main header
   text-transform: uppercase;
   color: #272B34;
   padding: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.mainHeader article .navbar .navbar-brand:hover {
+  background: #272B34;
+  color: #8DF48B;
 }
 
 .mainHeader article .navbar .navbar-nav {
@@ -113,5 +120,146 @@ o nama
 .o-nama p {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+/***************
+teme
+***************/
+.teme {
+  background: #8DF48B;
+  padding: 50px 0;
+}
+
+.teme h2 {
+  color: #272B34;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.teme h2::after {
+  background: #272B34;
+  content: "";
+  height: 5px;
+  display: block;
+  border: none;
+  width: 20%;
+  margin: 30px auto;
+}
+
+.teme p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.teme h3 {
+  font-size: 1.75rem;
+  margin-bottom: 40px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.teme i {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  background: #272B34;
+  color: #fff;
+  font-size: 4rem;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+/***************
+kontakt
+***************/
+#kontakt {
+  padding: 50px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 241, 241, 0.8)), to(rgba(241, 241, 241, 0.8))), url(img/cta.jpg);
+  background-image: linear-gradient(rgba(241, 241, 241, 0.8), rgba(241, 241, 241, 0.8)), url(img/cta.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#kontakt h2 {
+  color: #272B34;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#kontakt h2::after {
+  background: #D85080;
+  content: "";
+  height: 5px;
+  display: block;
+  border: none;
+  width: 20%;
+  margin: 30px auto;
+}
+
+#kontakt p {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+#kontakt p:nth-child(3) {
+  background: #8DF48B;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#kontakt button {
+  font-size: 1.25rem;
+  background: #D85080;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 5px;
+  line-height: 1.5;
+  border: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#kontakt button:hover {
+  background: #272B34;
+}
+
+/***************
+footer
+***************/
+footer {
+  padding: 25px 0;
+  background: #272B34;
+  color: #fff;
+  border-bottom: 5px solid #8DF48B;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer p a:first-child {
+  color: #8DF48B;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+footer p a:last-child {
+  color: #8DF48B;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+footer p a:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,6 +46,11 @@ mixins
     padding: 8px 16px;
     border-radius: 5px;
     line-height: 1.5;
+    border: none;
+    transition: $transition;
+    &:hover {
+        background: $black;
+    }
 }
 @mixin h2($color) {
     color: $color;
@@ -87,6 +92,11 @@ main header
                 text-transform: uppercase;
                 color: $black;
                 padding: 10px;
+                transition: $transition;
+                &:hover {
+                    background: $black;
+                    color: $green;
+                }
             }
             .navbar-nav {
                 padding-right: 15px;
@@ -131,5 +141,95 @@ o nama
     p {
         font-size: 1.25rem;
         font-weight: 300;
+    }
+}
+
+/***************
+teme
+***************/
+.teme {
+    background: $green;
+    padding: $padding;
+    h2 {
+        @include h2($black);
+        &::after {
+            @include line($black);
+        }
+    }
+    p {
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    h3 {
+        font-size: 1.75rem;
+        margin-bottom: 40px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+    i {
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+        background: $black;
+        color: $white;
+        font-size: 4rem;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+}
+
+/***************
+kontakt
+***************/
+#kontakt {
+    padding: $padding;
+    background-image: linear-gradient(rgba(241, 241, 241, .8), rgba(241, 241, 241, .8)), url(img/cta.jpg);
+    background-position: center;
+    background-size: cover;
+    h2 {
+        @include h2($black);
+        &::after {
+            @include line($red);
+        }
+    }
+    p {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+    p:nth-child(3) {
+        background: $green;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    button {
+        @include btn;
+    }
+}
+
+/***************
+footer
+***************/
+footer {
+    padding: 25px 0;
+    background: $black;
+    color: $white;
+    border-bottom: 5px solid $green;
+    p {
+        font-size: 1rem;
+        a:first-child {
+            color: $green;
+            font-size: 1rem;
+            transition: $transition;
+        }
+        a:last-child {
+            color: $green;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: $transition;
+        }
+        a:hover {
+            color: $white;
+        }
     }
 }
