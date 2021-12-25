@@ -27,6 +27,9 @@ li {
 a {
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /***************
 mixins
@@ -230,6 +233,143 @@ footer {
         }
         a:hover {
             color: $white;
+        }
+    }
+}
+
+/***************
+blogHeader
+***************/
+.mainHeader {
+    background-image: url(img/blog_header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    article {
+        padding-top: 50px;
+        .navbar {
+            background: $black;
+            border-bottom: 5px solid $green;
+            padding: 0;
+            .navbar-brand {
+                background: $green;
+                font-size: 2rem;
+                font-family: $secondary;
+                font-weight: 900;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: $black;
+                padding: 10px;
+                transition: $transition;
+                &:hover {
+                    background: $black;
+                    color: $green;
+                }
+            }
+            .navbar-nav {
+                padding-right: 15px;
+                .nav-link {
+                    color: $green;
+                    text-transform: uppercase;
+                    transition: $transition;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    hgroup {
+        margin-top: 180px;
+        h1 {
+            font-size: 6rem;
+            color: $green;
+            text-shadow: 5px 5px 20px $black;
+            font-weight: 900;
+        }
+        p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+    }
+}
+
+/***************
+blog
+***************/
+.blog {
+    background: $black;
+    padding: $padding;
+    .col-md-7 {
+        .post {
+            position: relative;
+            .featured-image {
+                position: relative;
+                img {
+                    border-radius: 50px 0 0;
+                }
+                p {
+                    background: $green;
+                    border: 1px solid $black;
+                    border-radius: 3px;
+                    display: inline-block;
+                    padding: 5px;
+                    position: absolute;
+                    left: 30px;
+                    top: 30px;
+                }
+            }
+            .text {
+                background: $green;
+                border: 1px solid $black;
+                border-radius: 0 0 50px;
+                width: 90%;
+                position: absolute;
+                top: 420px;
+                left: 32px;
+                h3 {
+                    font-weight: 900;
+                    letter-spacing: 2px;
+                    font-size: 1.75rem;
+                    margin-bottom: 10px;
+                }
+                a {
+                    @include btn;
+                }
+            }
+        }
+        .post:last-child {
+            margin-top: 270px;
+            margin-bottom: 270px;
+        }
+    }
+    .col-md-4 {
+        .widget {
+            background: $green;
+            border-radius: 50px 0 50px;
+            h3 {
+                font-weight: 900;
+                letter-spacing: 2px;
+                font-size: 1.75rem;
+                margin-bottom: 10px;
+            }
+            ul {
+                padding-left: 0;
+                li {
+                    a {
+                        color: $black;
+                        border-bottom: 1px solid $black;
+                        text-decoration: none;
+                        &:hover {
+                            color: $white;
+                            background: $black;
+                        }
+                    }
+                }
+            }
+        }
+        .widget:last-child {
+            margin-top: 90px;
         }
     }
 }
